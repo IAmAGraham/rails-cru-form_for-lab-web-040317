@@ -1,0 +1,12 @@
+<h1>Create A New Artist</h1>
+
+<%= form_for @artist do |f| %>
+
+Artist Name: <%= f.text_field :name %><br>
+
+My Artist Bio: <%= f.text_area :bio %><br>
+
+Submit: <%= f.submit %>
+<%end%>
+
+<%= link_to "Back", artists_path %>

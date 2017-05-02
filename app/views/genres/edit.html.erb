@@ -1,0 +1,10 @@
+<h1>Edit This Genre</h1>
+
+<%= form_for @genre do |f| %>
+
+Genre Name: <%= f.text_field :name %><br>
+
+Submit: <%= f.submit %>
+<%end%>
+
+<%= link_to "Back", genres_path %>
